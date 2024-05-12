@@ -30,11 +30,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: cargo-bins/cargo-binstall@main
       - name: Install mdBook
         run: |
           curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf -y | sh
           rustup update
-          cargo install mdbook mdbook-linkcheck mdbook-mermaid mdbook-katex
+          cargo binstall mdbook mdbook-linkcheck mdbook-mermaid mdbook-katex
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
