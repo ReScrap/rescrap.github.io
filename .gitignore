@@ -7,3 +7,5 @@ book
 
 
 # End of https://www.toptal.com/developers/gitignore/api/mdbook
+
+.history
