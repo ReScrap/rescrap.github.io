@@ -1,0 +1,20 @@
+[book]
+authors = ["Daniel Seiller"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Scrapland Reverse Engineering Notes"
+
+[output.linkcheck]
+
+[output.html]
+preferred-dark-theme = "rust"
+# mathjax-support = true
+additional-js = ["mermaid.min.js", "mermaid-init.js"]
+site-url = "https://earthnuker.keybase.pub/ReScrap/"
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
+
+[preprocessor.katex]
+after = ["links"]
