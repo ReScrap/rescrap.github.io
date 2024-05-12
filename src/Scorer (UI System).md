@@ -1,5 +1,4 @@
-
-## Inheritance
+# Inheritance
 
 (Shoutout to Strongleong for providing a script the grab this data from Ghidra!)
 

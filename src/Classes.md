@@ -31,27 +31,26 @@
 
 ## Class Inheritance
 
-
 ```mermaid
 graph LR
     World
     ActionClassList
     SaveVar
-	Window --> App 
-	CamPath --> Cam
-	Cam --> Entity
-	FCam --> Cam
-	Obj --> Entity
-	item --> Obj
-	WithLife --> Obj
-	Car --> WithLife
-	WalkChar --> WithLife
-	Missile --> WithLife
+    Window --> App 
+    CamPath --> Cam
+    Cam --> Entity
+    FCam --> Cam
+    Obj --> Entity
+    item --> Obj
+    WithLife --> Obj
+    Car --> WithLife
+    WalkChar --> WithLife
+    Missile --> WithLife
 ```
 
-# Attributes (VMT index 16,17,18 for accessor functions)
+## Attributes (VMT index 16,17,18 for accessor functions)
 
-## Entity
+### Entity
 
 - LLogic
 - Name
@@ -60,7 +59,7 @@ graph LR
 - NextInSlot
 - NextInList
 
-## FCam
+### FCam
 
 - OnSwitch
 - QuakeFactor
@@ -78,16 +77,13 @@ graph LR
 - AddTurn
 - AddTurnSpeed
 
-## Cam
+### Cam
 
 - Fov
 - clipNear
 - clipFar
-- 
 
-
-
-## Obj
+### Obj
 
 - OnEndMove
 - CamName
@@ -95,7 +91,7 @@ graph LR
 - OnObjSlot
 - LinkModel?
 
-## item 
+### item
 
 - TakeSound
 - OnReset
@@ -103,13 +99,13 @@ graph LR
 - Owner
 - TgTypeMarker
 
-## Car
+### Car
 
 - Traf
 - Model
 - Target
 
-## WithLife
+### WithLife
 
 - Descriptor
 - Attacker

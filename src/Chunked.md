@@ -1,6 +1,6 @@
 # Chunked Formats
 
-# General Block format
+## General Block format
 
 ```cpp
 struct Block {
@@ -17,7 +17,7 @@ struct Block {
 }
 ```
 
-# Block IDs
+## Block IDs
 
 | File ID | Chunk IDs                                                                      |
 | ------- | ------------------------------------------------------------------------------ |
@@ -36,32 +36,32 @@ Read types:
 - `3f`: array of 3 4-byte floats
 - `3i`: array of 3 4-byte unsigned integers
 
-| Chunk ID | Description                 | Reads                    |
-| -------- | --------------------------- | ------------------------ |
-| AMC      | Collision Data              |
-| ANI      | Animation data?             |
-| CAM      | Camera info?                |
-| CMSH     | Collision Mesh Data         |
-| EVA      | Vertex animation data       |
-| DUM      | Dummy (map object) data     |
-| INI      | INI-Configuration data      |
-| LFVF     | FVF Vertex Data             |
-| LUZ      | Lighting information        |
-| MAP      | Lightmap                    |
-| MAT      | Material information        |
-| NAE      | Animation Data?             |
-| NAM      | Animation Data?             |
-| PORT     | Map portals                 | `i==1, i, i, 4, 4`
-| QUAD     | Mesh data?                  |
-| SCN      | Scene tree data             |
-| SUEL     | Ground Plane?               | 0x18, 0xc, 4, 4, 4, 0x18
-| TRI      | Triangle Mesh               |
-| MD3D     | 3D Model definition         |
-| EMI      | Level geometry              |
+| Chunk ID | Description             | Reads                    |
+| -------- | ----------------------- | ------------------------ |
+| AMC      | Collision Data          |                          |
+| ANI      | Animation data?         |                          |
+| CAM      | Camera info?            |                          |
+| CMSH     | Collision Mesh Data     |                          |
+| EVA      | Vertex animation data   |                          |
+| DUM      | Dummy (map object) data |                          |
+| INI      | INI-Configuration data  |                          |
+| LFVF     | FVF Vertex Data         |                          |
+| LUZ      | Lighting information    |                          |
+| MAP      | Lightmap                |                          |
+| MAT      | Material information    |                          |
+| NAE      | Animation Data?         |                          |
+| NAM      | Animation Data?         |                          |
+| PORT     | Map portals             | `i==1, i, i, 4, 4`       |
+| QUAD     | Mesh data?              |                          |
+| SCN      | Scene tree data         |                          |
+| SUEL     | Ground Plane?           | 0x18, 0xc, 4, 4, 4, 0x18 |
+| TRI      | Triangle Mesh           |                          |
+| MD3D     | 3D Model definition     |                          |
+| EMI      | Level geometry          |                          |
 
-# Format of Specific chunks
+## Format of Specific chunks
 
-## INI
+### INI
 
 Configuration Data
 
@@ -78,7 +78,7 @@ struct INI {
 };
 ```
 
-## LFVF
+### LFVF
 
 DirectX Flexible Vertex Format Data
 
@@ -106,7 +106,7 @@ struct LFVF {
 };
 ```
 
-## DUM
+### DUM
 
 Map object data
 
@@ -129,7 +129,7 @@ struct DUM {
 };
 ```
 
-## MAP
+### MAP
 
 ```cpp
 struct MAP {
@@ -140,11 +140,11 @@ struct MAP {
 }
 ```
 
-## SCN
+### SCN
 
 - Tree structure
 
-```
+```text
 Escena: Models/Chars/Dtritus/Dtritus.M3D
   _raiz_escena                                       -1   0  -1  c:(null)    f:00000001  a:0000
     DC_Root                                           0   1  -1  c:(null)    f:00010090  a:0000

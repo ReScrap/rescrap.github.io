@@ -1,3 +1,4 @@
+# Multi Sprite Table (.mst)
 
 ```cpp
 struct Tile {

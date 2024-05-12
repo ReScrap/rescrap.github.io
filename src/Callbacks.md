@@ -1,4 +1,7 @@
+# C++ Callbacks
+
 They can be used in function parameters like so:
+
 ```python
 SAct.SetAct("EventFunc","!<Callback_Name>")
 ```
@@ -18,13 +21,13 @@ Scrap.Execute()
 
 Note the `!` symbol in front of the callback name
 
-# Parameters
+## Parameters
 
 - EditText:
-	- player_id: int
-	- scorer_item_name: str
+  - player_id: int
+  - scorer_item_name: str
 
-## OG
+### OG
 
 | Callback setup address | Callback name                | Callback funcion                       | Callback address |
 |------------------------|------------------------------|----------------------------------------|------------------|
@@ -204,8 +207,7 @@ Note the `!` symbol in front of the callback name
 | `004d3ba0`             | "ChangeDoorState"            | `callbacks.ChangeDoorState`            | `004d3bc0`       |
 | `004c91c0`             | "PoliceEndActionMoney"       | `callbacks.PoliceEndActionMoney`       | `004c91e0`       |
 
-
-## Remaster
+### Remaster
 
 | Callback setup address | Callback name                | Callback funcion | Callback address |
 |------------------------|------------------------------|------------------|------------------|

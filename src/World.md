@@ -8,17 +8,16 @@ Constructor Address: `0x479870`
 
 Points to World struct
 
-
-| Offset |           Type           |              Description               |
+| Offset | Type                     | Description                            |
 | ------ | ------------------------ | -------------------------------------- |
 | 0x0000 | `void**`                 | Virtual Method Table                   |
 | 0x0004 | `uint32_t`               | Slots in Entity Hashtable              |
 | 0x0008 | `void**`                 | Pointer to Entity Hashtable            |
 | 0x00B0 | `??`                     | Pointer to Ground Object (?)           |
-| 0x0288 | `pyEntity*`              | UsrEntity_0                           |
-| 0x028C | `pyEntity*`              | UsrEntity_1                           |
-| 0x0290 | `pyEntity*`              | UsrEntity_2                           |
-| 0x0294 | `pyEntity*`              | UsrEntity_3                           |
+| 0x0288 | `pyEntity*`              | UsrEntity_0                            |
+| 0x028C | `pyEntity*`              | UsrEntity_1                            |
+| 0x0290 | `pyEntity*`              | UsrEntity_2                            |
+| 0x0294 | `pyEntity*`              | UsrEntity_3                            |
 | 0x0298 | `uint32_t`               | Slots in Model Hashtable               |
 | 0x029C | `void**`                 | Pointer to Model Hashtable             |
 | 0x02B8 | `uint32_t`               | Slots in Entity lists Hashtable        |
@@ -42,15 +41,13 @@ Points to World struct
 | 0x2238 | `???`                    | Used in `World_Init`                   |
 | 0x2254 | `float`                  | Used in `World_Init`                   |
 
-
 ## cPyEntity structure
 
-Offset |   Type   |     Description
------- | -------- | --------------------
-0x0000 | `void**` | Virtual Method Table
-0x0004 | `char*`  | Name
-0x0008 | `void*`  | ???
-
+| Offset | Type     | Description          |
+| ------ | -------- | -------------------- |
+| 0x0000 | `void**` | Virtual Method Table |
+| 0x0004 | `char*`  | Name                 |
+| 0x0008 | `void*`  | ???                  |
 
 ## Entity Hash Table
 
@@ -68,16 +65,17 @@ struct HT_Entry {
 
 Data format:
 
-Offset |     Type      |       Description
------- | ------------- | ------------------------
-0x0    | `void**`      | Virtual Method Table (?)
-0x4    | `const char*` | name as string
-0x14   | `void*`       | pointer to self (why?)
-0x28   | `float[3]`    | Position in Game World
+| Offset | Type          | Description              |
+| ------ | ------------- | ------------------------ |
+| 0x0    | `void**`      | Virtual Method Table (?) |
+| 0x4    | `const char*` | name as string           |
+| 0x14   | `void*`       | pointer to self (why?)   |
+| 0x28   | `float[3]`    | Position in Game World   |
 
 ## EntityList Hash Table
 
 Attributes:
+
 - `Near`
 - `First`
 - `Num`

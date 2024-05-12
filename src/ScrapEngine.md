@@ -21,7 +21,6 @@ Checked in `0x00401180`
 
 - `-wideWindow`: start game in widescreen mode
 
-
 ## Files
 
 - `engine.txt`: Contains engine commands? Lexer/Parser @ `0x6168a0`
@@ -41,53 +40,52 @@ Checked in `0x00401180`
 
 `engine.txt` containing `Load("Models/Vehicles/Ships/SBoss1/SBoss1.SM3", 1)` results in error `D:\Games\Deep Silver\Scrapland\engine.txt (1): Error: missing a ( character`
 
-
 ## Ingame-Console
 
 (Ctrl+\^ or right click on window title bar and select "switch console") (Handler @ `0x402190`)
 
-* `<Code>`: Evaluate Python code
-* `:<Var>`: Get Game Engine Variable
-* `:<Var> <Val>`: Set Game Engine Variable
-* `?`: Show all Game Engine Variables
-* `?<String>`: Show all Game Engine Variables matching `<String>`
-* `/<command>`: Run Command defined in `QuickConsole.py`
-  * Expands to `import quickconsole;quickconsole.%s()`
-* `/<command> <arg>,<arg>`: Run function in `QuickConsole.py` with argument(s)
-  * Expands to `import quickconsole;quickconsole.%s(%s)`
+- `<Code>`: Evaluate Python code
+- `:<Var>`: Get Game Engine Variable
+- `:<Var> <Val>`: Set Game Engine Variable
+- `?`: Show all Game Engine Variables
+- `?<String>`: Show all Game Engine Variables matching `<String>`
+- `/<command>`: Run Command defined in `QuickConsole.py`
+  - Expands to `import quickconsole;quickconsole.%s()`
+- `/<command> <arg>,<arg>`: Run function in `QuickConsole.py` with argument(s)
+  - Expands to `import quickconsole;quickconsole.%s(%s)`
 
 ## External Console
 
 (Scene graph debugging?) (Handler @ `0x5f9520`)
 
-* `listar luces` List lights in scene
-* `listar` list models in scene
-* `arbol <model_name>` show details for model
-* `mem` (doesn't do anything?)
-* `ver uniones` 
-* Easter Eggs:
-  * `imbecil`
-  * `idiota`
-  * `capullo`
+- `listar luces` List lights in scene
+- `listar` list models in scene
+- `arbol <model_name>` show details for model
+- `mem` (doesn't do anything?)
+- `ver uniones`
+- Easter Eggs:
+  - `imbecil`
+  - `idiota`
+  - `capullo`
 
 ## Keyboard Shortcuts
 
 Resource ID 200 (0xc8)
 
-Shift+Esc: Exit game
-Ctrl+Alt+Shift+F10: Change graphics device
-Ctrl+F11: Focus Console Window
-F10: Pause game
-F12: Nothing?
-Ctrl+F12: Show FPS
-Ctrl+Alt+Shift+F7: Wireframe
-Ctrl+Alt+Shift+F8: Texture Filtering Mode
-Ctrl+Alt+Shift+F9: Cycle Rendering Info
-Ctrl+Alt+Shift+Enter: Toggle fullscreen
+- Shift+Esc: Exit game
+- Ctrl+Alt+Shift+F10: Change graphics device
+- Ctrl+F11: Focus Console Window
+- F10: Pause game
+- F12: Nothing?
+- Ctrl+F12: Show FPS
+- Ctrl+Alt+Shift+F7: Wireframe
+- Ctrl+Alt+Shift+F8: Texture Filtering Mode
+- Ctrl+Alt+Shift+F9: Cycle Rendering Info
+- Ctrl+Alt+Shift+Enter: Toggle fullscreen
 
 ## Window Messages
 
-**TODO**
+TODO
 
 ## Other interesting Memory Addresses
 
