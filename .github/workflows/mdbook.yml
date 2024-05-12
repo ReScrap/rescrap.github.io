@@ -35,7 +35,7 @@ jobs:
         run: |
           curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf -y | sh
           rustup update
-          cargo binstall mdbook mdbook-linkcheck mdbook-mermaid mdbook-katex
+          cargo binstall -y mdbook mdbook-linkcheck mdbook-mermaid mdbook-katex
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
