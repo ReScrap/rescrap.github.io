@@ -11,6 +11,7 @@
   - [Python API](./Python_API.md)
     - [Modules](./Python_Modules.md)
     - [Callbacks](./Callbacks.md)
+  - [Scorer (UI System)](./Scorer%20(UI%20System).md)
   - [File Formats](./File_Formats.md)
     - [Chunked Formats](./Chunked.md)
     - [Packed](./Packed.md)
